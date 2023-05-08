@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-sagittarius',
   template: `
-    <p>
-      sagittarius works!
-    </p>
+ <img mat-card-image src="../../../assets/images/sagittarius.jpg" style="width: 100%; height:100%" >
   `,
   styles: [
   ]

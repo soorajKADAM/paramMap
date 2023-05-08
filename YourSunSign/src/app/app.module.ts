@@ -1,14 +1,15 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SunsignsModule } from './sunsigns/sunsigns.module';
+import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { HomeComponent } from './home/home.component';
+import { HttpClientModule } from '@angular/common/http'
 import { MaterialModule } from '../../../YourSunSign/src/app/material.module';
-import { ParticlesModule } from 'angular-particle';
+import { NgModule } from '@angular/core';
 import { NgParticlesModule } from 'ng-particles';
+import { SunsignsModule } from './sunsigns/sunsigns.module';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [
@@ -18,6 +19,9 @@ import { NgParticlesModule } from 'ng-particles';
     BrowserAnimationsModule,
     MaterialModule,
     NgParticlesModule,
+    HttpClientModule,
+    FlexLayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],
