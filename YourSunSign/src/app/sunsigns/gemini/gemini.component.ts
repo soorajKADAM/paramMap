@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-gemini',
   template: `
-    <p>
-      gemini works!
-    </p>
+ <img mat-card-image src="../../../assets/images/gemini.jpg" style="width: 100%; height:100%" >
   `,
   styles: [
   ]

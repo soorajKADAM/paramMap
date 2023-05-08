@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-virgo',
   template: `
-    <p>
-      virgo works!
-    </p>
+ <img mat-card-image src="../../../assets/images/virgo.jpg" style="width: 100%; height:100%" >
   `,
   styles: [
   ]

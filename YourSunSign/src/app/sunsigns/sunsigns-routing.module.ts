@@ -1,13 +1,14 @@
-import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '../../../../YourSunSign/src/app/home/home.component';
+
 import { AquariusComponent } from '../../../../YourSunSign/src/app/sunsigns/aquarius/aquarius.component';
 import { AriesComponent } from '../../../../YourSunSign/src/app/sunsigns/aries/aries.component';
 import { CancerComponent } from '../../../../YourSunSign/src/app/sunsigns/cancer/cancer.component';
 import { CapricornComponent } from '../../../../YourSunSign/src/app/sunsigns/capricorn/capricorn.component';
 import { GeminiComponent } from '../../../../YourSunSign/src/app/sunsigns/gemini/gemini.component';
+import { HomeComponent } from '../../../../YourSunSign/src/app/home/home.component';
 import { LeoComponent } from '../../../../YourSunSign/src/app/sunsigns/leo/leo.component';
 import { LibraComponent } from '../../../../YourSunSign/src/app/sunsigns/libra/libra.component';
+import { NgModule } from '@angular/core';
 import { PiscesComponent } from '../../../../YourSunSign/src/app/sunsigns/pisces/pisces.component';
 import { SagittariusComponent } from '../../../../YourSunSign/src/app/sunsigns/sagittarius/sagittarius.component';
 import { ScorpioComponent } from '../../../../YourSunSign/src/app/sunsigns/scorpio/scorpio.component';
@@ -17,8 +18,8 @@ import { VirgoComponent } from '../../../../YourSunSign/src/app/sunsigns/virgo/v
 
 const routes: Routes = [
   {
-    path: '', 
-    component: HomeComponent, 
+    path: '',
+    component: SunsignHomeComponent,
     children: [
       { path: '', redirectTo: '/sunsigns/home', pathMatch: 'full' },
       { path: 'home', component: SunsignHomeComponent },

@@ -1,0 +1,29 @@
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap="16px grid">
+  <div fxFlex="25%">
+  <mat-card class="mat-elevation-z3" style="background-color: rgba(43, 37, 37, 0.966);">
+  <mat-card-content fxLayoutAlign="center">
+<router-outlet></router-outlet>
+</mat-card-content>
+</mat-card>
+</div>
+</div>
+</div>
+
+<div class="content">
+  <div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div fxFlex="25%" *ngFor="let sunsign of sunsigns">
+  <mat-card class="mat-elevation-z3">
+  <mat-card-content fxLayoutAlign="center center" fxLayout="column">
+<div class="mat-caption" id="gdata"
+routerLinkActive="active-link"> <a mat-button routerLink="/sunsigns/{{sunsign.name}}" routerLinkActive="active-link">
+ {{sunsign.id}} .{{sunsign.name}}
+</a></div>
+<mat-icon class="star" color="accent">star</mat-icon>
+</mat-card-content>
+</mat-card>
+</div>
+</div>
+</div>
+
+

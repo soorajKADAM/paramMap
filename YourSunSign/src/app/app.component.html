@@ -1,6 +1,8 @@
 <ng-particles id="tsparticles" [options]="options"></ng-particles>
-<mat-toolbar color="primary">
-  <mat-icon svgIcon="sunsign"></mat-icon>
-  <a mat-button routerLink="/home"><h1>YourSunSigns</h1></a>
+<body>
+<mat-toolbar color="primary" fxLayoutGap="8px">
+  <mat-icon svgIcon="sunsign" style="transform: scale(2);"></mat-icon>
+  <a mat-button routerLink="/home" style="margin-top: 16px;"><h1>YourSunSigns</h1></a>
 </mat-toolbar>
 <router-outlet></router-outlet>
+</body>
